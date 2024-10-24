@@ -19,4 +19,4 @@ A execução é feita em um ambiente simulado. Poderia muito bem ser executado e
 
 Ciclo de vida, as entidades dos android vai ter estados que vai criar e destruir activitys.
 
-Exemplo, adicionar um comportamento quando a activity for criada, consegue sobrescrever
+Exemplo, adicionar um comportamento quando a activity for criada, consegue sobrescrever os métodos. É assim que adiciona novos comportamentos na activity.
