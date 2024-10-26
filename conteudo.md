@@ -20,3 +20,27 @@ A execução é feita em um ambiente simulado. Poderia muito bem ser executado e
 Ciclo de vida, as entidades dos android vai ter estados que vai criar e destruir activitys.
 
 Exemplo, adicionar um comportamento quando a activity for criada, consegue sobrescrever os métodos. É assim que adiciona novos comportamentos na activity.
+
+# Iniciando a View
+
+Colocando uma view dentro da activity.
+
+1.  Escrever setContentView();
+2.  Criar instância da view : TextView aluno new TextView(this);
+3.  Depois chamar em aluno.setText("felipe) e chamar em setContentView(aluno)
+
+Porém essa técnica não pe uma boa prática, porque coloca muita responsabilidade na activity. Quanto menos responsabilidade melhor.
+
+# Maneira correta 
+
+1. Cria um diretório layout (main) dentro de res, depois um file activity_main
+
+Próximo passo.
+
+Pegar os componentes views e fazer o vínculo com o código fonte.
+
+1. Criar uma list que vai representar os alunos. (No arquivo MainActivity)
+list<String> alunos = new ArrayList<>(Arrays.asList())
+Criar lista de maneira dinâmica.
+
+2. Depois utilizar TextView primeiroAluno = findViewById(R.id.textView), para localizar a view.
