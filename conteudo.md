@@ -31,7 +31,7 @@ Colocando uma view dentro da activity.
 
 Porém essa técnica não pe uma boa prática, porque coloca muita responsabilidade na activity. Quanto menos responsabilidade melhor.
 
-# Maneira correta 
+# Outra maneira 
 
 1. Cria um diretório layout (main) dentro de res, depois um file activity_main
 
@@ -39,8 +39,22 @@ Próximo passo.
 
 Pegar os componentes views e fazer o vínculo com o código fonte.
 
-1. Criar uma list que vai representar os alunos. (No arquivo MainActivity)
+2. Criar uma list que vai representar os alunos. (No arquivo MainActivity)
 list<String> alunos = new ArrayList<>(Arrays.asList())
 Criar lista de maneira dinâmica.
 
-2. Depois utilizar TextView primeiroAluno = findViewById(R.id.textView), para localizar a view.
+3. Depois utilizar TextView primeiroAluno = findViewById(R.id.textView), para localizar a view.
+
+# Maneira correta 
+
+1.  Cria um ListView no arquivo do layout. E dá o nome do id de activity_main_lista_de_alunos
+
+2.  Depois no código em , Main Activity.java, aplicar um Array.
+
+    *   List<String> listaAlunos = new ArrayList<>(Arrays.asList("Felipe Ferreira", "Martelo Dias", "Carolina Azevedo"))
+
+3. Ainda no arquivo MainActivity.java fazer:
+
+    *  ListView listaAlunos = findViewById(R.id.activity_main_lista_de_alunos)
+    *  listaAlunos.setAdapter(new ArrayAdapter<String>(context:this, android.R.layout.simple_list_item_1, alunos))   Adapter é um intermediário que sincroniza os dados da lista com a ListView. O ArrayAdapter serve para simplificar a implementação. 
+
