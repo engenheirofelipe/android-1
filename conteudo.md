@@ -58,3 +58,7 @@ Criar lista de maneira dinâmica.
     *  ListView listaAlunos = findViewById(R.id.activity_main_lista_de_alunos)
     *  listaAlunos.setAdapter(new ArrayAdapter<String>(context:this, android.R.layout.simple_list_item_1, alunos))   Adapter é um intermediário que sincroniza os dados da lista com a ListView. O ArrayAdapter serve para simplificar a implementação. 
 
+
+#   views
+
+Para utilizar uma view dentro de outra basta inserir a ViewGroup. e vai formar as lauputs 
