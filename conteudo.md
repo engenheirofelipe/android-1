@@ -62,3 +62,12 @@ Criar lista de maneira dinâmica.
 #   views
 
 Para utilizar uma view dentro de outra basta inserir a ViewGroup. e vai formar as lauputs 
+
+  A url xmlns:android="http://schemas.android.com/apk/res/android" do arquivo da activity_Main.xml é o que vai fazer importar o restande dos atributos no código
+
+  Além disso adicionar :
+
+*   android:layout_alignParentEnd="true"
+*   android:layout_alignParentBottom="true"
+*   android:layout_marginEnd="26dp"
+*   android:layout_marginBottom="26dp"
